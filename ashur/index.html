@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from ashur.vercel.app/ashur/ by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 22 Aug 2024 09:43:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <base >
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="تجربه تطبيق اشور بدون تحميل">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ashur">
+  <link rel="apple-touch-icon" href="../icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../favicon.png"/>
+
+  <title>اشور</title>
+  <link rel="manifest" href="../manifest.json">
+
+  <style>
+    #loading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      z-index: 9999;
+    }
+    #loading div {
+      border: 16px solid #f3f3f3;
+      border-top: 16px solid #3498db;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div id="loading">
+    <div></div>
+  </div>
+  
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      document.getElementById('loading').style.display = 'none';
+    });
+  </script>
+  <script src="../flutter_bootstrap.js" async></script>
+</body>
+
+<!-- Mirrored from ashur.vercel.app/ashur/ by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 22 Aug 2024 09:44:02 GMT -->
+</html>
